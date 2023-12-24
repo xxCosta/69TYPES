@@ -1,0 +1,22 @@
+{
+  "name": "69typestesting",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxCosta/69TYPES.git"
+  },
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist/ && tsup index.ts --format cjs,esm --dts"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "tsup": "^8.0.1"
+  },
+  "files": ["dist"],
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
